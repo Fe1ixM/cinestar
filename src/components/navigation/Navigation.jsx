@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../../context/useAuthContext";
 import styles from "../navigation/navigation.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/into_your_heart.jpg";
 
 // Hooks
 // Dekleration af en funktion
