@@ -4,7 +4,7 @@ import styles from "../ctaSection/ctasection.module.css";
 export default function CallToAction() {
   return (
     <section className={styles.ctaSection}>
-      <div className={ctaContent}>
+      <div className={styles.ctaContent}>
         <p className={styles.ctaLabel}>CINESTAR STUDIO</p>
         <h2 className={styles.ctaHeading}>
           Har du en idé til dit næste projekt?
