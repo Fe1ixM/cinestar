@@ -1,4 +1,4 @@
-import heroImage from "../../assets/photoshoot.jpg";
+import heroImage from "../../assets/studio.jpg";
 import sundanceAward from "../../assets/award1.png";
 import laAward from "../../assets/award2.png";
 import styles from "../hero/hero.module.css";
