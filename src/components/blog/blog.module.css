@@ -1,0 +1,91 @@
+.blogSection {
+  width: 100%;
+  padding: clamp(3.5rem, 8vw, 5rem) 1.5rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.blogContent {
+  width: 100%;
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.blogHeader {
+  margin-bottom: 1rem;
+}
+
+.blogLabel {
+  margin-bottom: 0.5rem;
+  color: #f07232;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.sectionHeading {
+  margin: 0;
+  font-size: clamp(1.875rem, 4vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.blogDescription {
+  margin-bottom: 2.5rem;
+  color: #a3a3a3;
+  line-height: 1.7;
+}
+
+.blogCard {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+}
+
+.blogImage {
+  display: block;
+  width: 100%;
+  height: clamp(14rem, 35vw, 25rem);
+  object-fit: cover;
+}
+
+.blogCardContent {
+  padding-block: 1.25rem;
+}
+
+.blogTitle {
+  margin: 0 0 0.75rem;
+  color: #f07232;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.blogTeaser {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0 0 1rem;
+  color: #a3a3a3;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.blogDate {
+  color: #a3a3a3;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.loadingMessage,
+.emptyMessage {
+  color: #a3a3a3;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #f07232;
+}

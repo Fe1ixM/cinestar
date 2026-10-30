@@ -21,7 +21,8 @@ export default function Hero() {
 
         <header className={styles.heroHeader}>
           <h1 className={styles.heroHeading}>
-            CINESTAR STUDIO <br /> FILM & TV <br /> PRODUKTION
+            CINESTAR STUDIO <br /> FILM & TV <br />{" "}
+            <span className={styles.signatureOrange}>PRODUKTION</span>
           </h1>
           <p className={styles.heroSubtitle}>
             Vi skaber levende fortællinger, der fanger dit publikum. Fra idé til

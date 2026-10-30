@@ -18,8 +18,8 @@ export default function Portfolio() {
   return (
     <section className={styles.portfolioSection}>
       <div className={styles.portfolioContent}>
-        <p className={styles.portfolioLabel}>Portfolio</p>
-        <h2 className={styles.portfolioHeading}>Udvalgte Projekter</h2>
+        <p className={styles.portfolioLabel}>PORTFOLIO</p>
+        <h2 className={styles.portfolioHeading}>UDVALGTE PROJEKTER</h2>
 
         <div className={styles.projectCarousel}>
           {currentProject === 0 && (
@@ -29,18 +29,6 @@ export default function Portfolio() {
                 src={daughterMom}
                 alt="Daughter vs Mom filmproduktion"
               />
-
-              <div className={styles.projectDetails}>
-                <h3 className={styles.projectTitle}>Daughter vs Mom</h3>
-                <p className={styles.projectSubtitle}>
-                  The story of mom and daughter
-                </p>
-                <p className={styles.projectDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                  a dui pharetta, vehingunt lacus eu, ultrices purus. Nunc eget
-                  auctor leo, at vehicula orci.
-                </p>
-              </div>
             </article>
           )}
 
@@ -51,16 +39,6 @@ export default function Portfolio() {
                 alt="School Life dokumentarfilm"
                 className={styles.projectImage}
               />
-
-              <div className={styles.projectDetails}>
-                <h3 className={styles.projectTitle}>School Life</h3>
-                <p className={styles.projectSubtitle}>A school movie</p>
-                <p className={styles.projectDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                  a dui pharetta, vehingunt lacus eu, ultrices purus. Nunc eget
-                  auctor leo, at vehicula orci.
-                </p>
-              </div>
             </article>
           )}
 
@@ -71,16 +49,6 @@ export default function Portfolio() {
                 alt="Into Your Heart musikprojekt"
                 className={styles.projectImage}
               />
-
-              <div className={styles.projectDetails}>
-                <h3 className={styles.projectTitle}>Into Your Heart</h3>
-                <p className={styles.projectSubtitle}>A story of youth</p>
-                <p className={styles.projectDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                  a dui pharetta, vehingunt lacus eu, ultrices purus. Nunc eget
-                  auctor leo, at vehicula orci.
-                </p>
-              </div>
             </article>
           )}
 
@@ -88,9 +56,18 @@ export default function Portfolio() {
             type="button"
             onClick={showPreviousProject}
             className={styles.previousButton}
-            aria-label="Forrige Projekt"
+            aria-label="Forrige projekt"
           >
-            &lt;
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M15 18L9 12L15 6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
 
           <button
@@ -99,7 +76,16 @@ export default function Portfolio() {
             className={styles.nextButton}
             aria-label="Næste projekt"
           >
-            &gt;
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M9 18L15 12L9 6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
 

@@ -4,16 +4,12 @@ import { useAuth } from "../../context/useAuthContext";
 import styles from "../navigation/navigation.module.css";
 import logo from "../../assets/logo.png";
 
-// Hooks
-// Dekleration af en funktion
 export default function Navigation() {
-  // Array destrukturering
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const currentLocation = useLocation();
   const navigate = useNavigate();
 
-  // Objekt destrukturering
   const { isAuthenticated, user, logout } = useAuth();
   const userIsAdmin = isAuthenticated && user?.role === "admin";
 
@@ -86,18 +82,61 @@ export default function Navigation() {
           aria-expanded={menuIsOpen}
           aria-controls="mobile-navigation"
         >
-          {menuIsOpen ? "Luk" : "Menu"}
+          {menuIsOpen ? (
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 6L18 18M18 6L6 18"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 6H21M3 12H21M3 18H21"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+          )}
         </button>
 
         {menuIsOpen && (
           <div className={styles.mobileMenu} id="mobile-navigation">
-            <button
-              type="button"
-              onClick={closeMenu}
-              className={styles.closeButton}
-            >
-              Luk menu
-            </button>
+            <div className={styles.mobileMenuHeader}>
+              <Link
+                to="/"
+                onClick={closeMenu}
+                className={styles.mobileLogoLink}
+              >
+                <img
+                  src={logo}
+                  alt="CineStar Forside"
+                  className={styles.logo}
+                />
+              </Link>
+
+              <button
+                type="button"
+                onClick={closeMenu}
+                className={styles.closeButton}
+                aria-label="Luk menu"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 6L18 18M18 6L6 18"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
 
             <div className={styles.mobileLinks}>
               {renderNavigationLinks()}

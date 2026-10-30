@@ -5,6 +5,7 @@ import Services from "../components/services/Services";
 import History from "../components/companyHistory/CompanyHistory";
 import Udtalelser from "../components/udtalelser/Udtalelser";
 import Contact from "../components/contact/Contact";
+import Blog from "../components/blog/Blog";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <History />
       <Udtalelser />
       <Contact />
+      <Blog />
     </div>
   );
 }

@@ -1,0 +1,87 @@
+.ctaSection {
+  padding: clamp(3.5rem, 8vw, 5rem) 1.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.ctaContent {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.ctaLabel {
+  margin-bottom: 0.5rem;
+  color: #f07232;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.ctaHeading {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.875rem, 4vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ctaSubtitle {
+  margin-bottom: 2.5rem;
+  color: #fff;
+  line-height: 1.7;
+}
+
+.ctaThumbnailContainer {
+  overflow: hidden;
+  margin: 0 0 2.5rem;
+}
+
+.ctaThumbnail {
+  display: block;
+  width: 100%;
+  height: clamp(16rem, 35vw, 25rem);
+  object-fit: cover;
+}
+
+.ctaSubheading {
+  margin: 0 0 1rem;
+  color: #f07232;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+}
+
+.ctaStatistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+.ctaStatistic {
+  text-align: center;
+}
+
+.ctaStatisticNumber {
+  margin: 0;
+  color: #f07232;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 700;
+}
+
+.ctaStatisticLabel {
+  margin-top: 0.25rem;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+@media (min-width: 48rem) {
+  .ctaStatistics {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
