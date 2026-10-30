@@ -1,0 +1,77 @@
+.historySection {
+  padding: clamp(3.5rem, 8vw, 5rem) 1.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.historyContent {
+  width: 100%;
+  max-width: 48rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.historyHeader {
+  margin-bottom: 1.5rem;
+}
+
+.historyLabel {
+  margin-bottom: 0.5rem;
+  color: #f07232;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.historyHeading {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.875rem, 4vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.historyDescription {
+  margin-bottom: 2.5rem;
+  color: #fff;
+  line-height: 1.7;
+}
+
+.ceoDetails {
+  margin-bottom: 1.5rem;
+}
+
+.ceoName {
+  margin-bottom: 0.25rem;
+  color: #f07232;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.ceoTitle {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.historyImageContainer {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.historyImage {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 48rem) {
+  .historyImage {
+    height: 24rem;
+  }
+}
