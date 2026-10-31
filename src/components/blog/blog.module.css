@@ -33,7 +33,7 @@
 
 .blogDescription {
   margin-bottom: 2.5rem;
-  color: #a3a3a3;
+  color: #fff;
   line-height: 1.7;
 }
 
@@ -67,7 +67,7 @@
   display: -webkit-box;
   overflow: hidden;
   margin: 0 0 1rem;
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.875rem;
   line-height: 1.6;
   -webkit-box-orient: vertical;
@@ -75,14 +75,14 @@
 }
 
 .blogDate {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.75rem;
   font-style: italic;
 }
 
 .loadingMessage,
 .emptyMessage {
-  color: #a3a3a3;
+  color: #fff;
   text-align: center;
 }
 

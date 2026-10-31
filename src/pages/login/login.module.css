@@ -35,7 +35,7 @@
 }
 
 .formGroup label {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.875rem;
 }
 
@@ -94,7 +94,7 @@
 
 .loggedInText {
   margin-bottom: 0.5rem;
-  color: #a3a3a3;
+  color: #fff;
 }
 
 .loggedInText span {
@@ -104,6 +104,6 @@
 
 .roleText {
   margin-bottom: 2rem;
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.875rem;
 }

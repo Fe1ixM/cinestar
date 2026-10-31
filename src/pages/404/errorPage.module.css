@@ -17,13 +17,13 @@
 
 .errorContent p {
   margin-bottom: 2rem;
-  color: #a3a3a3;
+  color: #fff;
 }
 
 .homeLink {
   display: inline-block;
   padding: 0.75rem 1rem;
-  border: 2px solid #a3a3a3;
+  border: 2px solid #fff;
   color: #000;
   text-decoration: none;
   transition:
@@ -32,6 +32,6 @@
 }
 
 .homeLink:hover {
-  background-color: #a3a3a3;
-  color: #fff;
+  background-color: #000;
+  color: #f07232;
 }

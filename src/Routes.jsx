@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Blog from "./pages/blog/Blog";
 import BlogOnePage from "./pages/blog/blogOnePage/BlogOnePage";
 import FAQ from "./pages/faq/Faq";
+import ContactPage from "./pages/contact/Contact";
 import Error from "./pages/404/errorPage";
 
 import Login from "./pages/login/Login";
@@ -26,6 +27,7 @@ export default function AppRoutes() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:id" element={<BlogOnePage />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/contact" element={<ContactPage />} />
               <Route
                 path="/backoffice"
                 element={

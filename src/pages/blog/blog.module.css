@@ -45,7 +45,7 @@
 }
 
 .breadcrumb a {
-  color: #a3a3a3;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@
   display: -webkit-box;
   overflow: hidden;
   margin-bottom: 1.5rem;
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.875rem;
   line-height: 1.7;
   -webkit-box-orient: vertical;
@@ -134,7 +134,7 @@
 
 .loading,
 .empty {
-  color: #a3a3a3;
+  color: #fff;
   text-align: center;
 }
 
@@ -179,7 +179,7 @@
   width: 100%;
   min-height: 3.25rem;
   padding: 0.75rem 1rem;
-  border: 1px solid #a3a3a3;
+  border: 1px solid #fff;
   background-color: #fff;
   color: #000;
   font-size: 0.875rem;

@@ -32,7 +32,7 @@
 
 .loadingMessage {
   margin: 0 auto;
-  color: #a3a3a3;
+  color: #fff;
   text-align: center;
 }
 
@@ -89,14 +89,14 @@
 }
 
 .emptyStar {
-  fill: #a3a3a3;
+  fill: #fff;
 }
 
 .reviewText {
   display: -webkit-box;
   overflow: hidden;
   margin: 0 0 1rem;
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.875rem;
   line-height: 1.6;
   -webkit-box-orient: vertical;
@@ -120,7 +120,7 @@
 
 .authorPosition {
   margin: 0;
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.75rem;
 }
 
@@ -128,5 +128,5 @@
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
-  fill: #a3a3a3;
+  fill: #fff;
 }

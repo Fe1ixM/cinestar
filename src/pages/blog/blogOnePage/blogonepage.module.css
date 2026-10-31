@@ -48,7 +48,7 @@
 }
 
 .breadcrumb a {
-  color: #a3a3a3;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .date {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.8rem;
   font-style: italic;
 }
@@ -107,7 +107,7 @@
 }
 
 .articleBody p {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 0.95rem;
   line-height: 1.9;
   white-space: pre-line;
@@ -135,7 +135,7 @@
 
 .message {
   padding: 5rem 1.5rem 1rem;
-  color: #a3a3a3;
+  color: #fff;
   text-align: center;
 }
 
