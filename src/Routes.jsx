@@ -6,7 +6,7 @@ import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
 
-import Error from "./pages/404/ErrorPage";
+import Error from "./pages/404/errorPage";
 
 import Login from "./pages/login/Login";
 

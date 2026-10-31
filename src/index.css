@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-heading: "Cormorant", serif;
+  --font-body: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
 *,
 *::before,
 *::after {
