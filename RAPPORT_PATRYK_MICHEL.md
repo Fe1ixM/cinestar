@@ -98,6 +98,11 @@ cinestar@0.0.0 C:\Web Development\cinestar
 
 ## Faglige valg og dokumentation
 
+- Strukturering af komponenter
+- State management
+- Api håndtering
+- Backend og Database
+
 Jeg tog mig en del friheder med stylingen. Jeg undlod at have 3 award images på hero billedet da de to var ens. Det kan virke uprofessionelt.
 
 De fleste sektioner på siden er adskilt med orange borders. Jeg valgte at slette borders, da farven var for meget og kunne genere i en UX kontekst.
@@ -107,6 +112,11 @@ Kontakt sektionen har jeg lavet om til en column struktur både på desktop og m
 Newsletteren har ikke et baggrundsbillede, da det gjorde kontrasten mellem teksten og baggrunden svært at læse. Derudover har jeg givet den et Call to Action følelse som fanger opmærksomheden.
 
 Footeren lod jeg blive på alle sider da det sagtens kan føre til tab af potentielle kunde pga, øget friktion.
+
+## Tilvalgsopgaver
+
+Login-beskyttelse af ADMIN-delen
+Backoffice: Messages
 
 ## Anvendelse af tredjepart
 
