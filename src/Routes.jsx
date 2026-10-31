@@ -5,7 +5,9 @@ import ProtectedRoute from "./protectedRoute/ProtectedRoute";
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
-
+import Blog from "./pages/blog/Blog";
+import BlogOnePage from "./pages/blog/blogOnePage/BlogOnePage";
+import FAQ from "./pages/faq/Faq";
 import Error from "./pages/404/errorPage";
 
 import Login from "./pages/login/Login";
@@ -18,10 +20,12 @@ export default function AppRoutes() {
       <BrowserRouter>
         <AuthProvider>
           <Navigation />
-          <main>
+          <div>
             <Routes>
               <Route path="/" element={<Home />} />
-
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:id" element={<BlogOnePage />} />
+              <Route path="/faq" element={<FAQ />} />
               <Route
                 path="/backoffice"
                 element={
@@ -33,7 +37,7 @@ export default function AppRoutes() {
               <Route path="/login" element={<Login />} />
               <Route path="*" element={<Error />} />
             </Routes>
-          </main>
+          </div>
 
           <Footer />
         </AuthProvider>

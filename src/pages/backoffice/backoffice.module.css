@@ -3,6 +3,7 @@
   margin-inline: auto;
   padding-block: clamp(3rem, 7vw, 6rem);
   color: #fff;
+  background: #000;
 }
 
 .pageHeader {
