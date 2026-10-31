@@ -1,0 +1,338 @@
+.backoffice {
+  width: min(100% - 2rem, 90rem);
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 6rem);
+  color: #fff;
+}
+
+.pageHeader {
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+  color: #f07232;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pageHeader h1,
+.accessMessage h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+}
+
+.tabs {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.tab,
+.activeTab {
+  padding: 0.9rem 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: #a3a3a3;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.tab:hover,
+.activeTab {
+  color: #f07232;
+}
+
+.activeTab {
+  border-bottom-color: #f07232;
+}
+
+.section {
+  min-width: 0;
+}
+
+.sectionHeading {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sectionHeading span {
+  color: #a3a3a3;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.formSection {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #a3a3a3;
+}
+
+.formHeading {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  max-width: 48rem;
+}
+
+.formField {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.formField label {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.formField input,
+.formField textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid #a3a3a3;
+  background: #000;
+  color: #fff;
+  font: inherit;
+}
+
+.formField input:focus,
+.formField textarea:focus {
+  outline: 2px solid #f07232;
+  outline-offset: 2px;
+  border-color: #f07232;
+}
+
+.formField input::placeholder,
+.formField textarea::placeholder {
+  color: #a3a3a3;
+}
+
+.formField input[type="file"] {
+  padding: 0.65rem;
+}
+
+.formField input[type="file"]::file-selector-button {
+  margin-right: 1rem;
+  padding: 0.45rem 0.75rem;
+  border: 0;
+  background: #f07232;
+  color: #000;
+  cursor: pointer;
+}
+
+.formField textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.currentImage {
+  color: #a3a3a3;
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+.formActions,
+.messageActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.primaryButton,
+.secondaryButton,
+.deleteButton {
+  min-height: 2.75rem;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid #a3a3a3;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.primaryButton {
+  border-color: #f07232;
+  background: #f07232;
+  color: #000;
+}
+
+.primaryButton:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+.secondaryButton:hover {
+  border-color: #f07232;
+  color: #f07232;
+}
+
+.deleteButton {
+  color: #f07232;
+  border-color: #f07232;
+}
+
+.deleteButton:hover {
+  background: #f07232;
+  color: #000;
+}
+
+.messageList {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.messageCard {
+  border: 1px solid #a3a3a3;
+  background: #000;
+}
+
+.unreadMessage {
+  border-left: 3px solid #f07232;
+}
+
+.readMessage {
+  border-left: 3px solid #a3a3a3;
+}
+
+.messageHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.messageHeader:hover {
+  background: rgb(255 255 255 / 5%);
+}
+
+.messageSender {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.messageSender strong {
+  font-size: 0.95rem;
+}
+
+.messageSender > span {
+  color: #f07232;
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+.messageMetadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  color: #a3a3a3;
+  font-size: 0.75rem;
+}
+
+.readStatus,
+.unreadStatus {
+  display: inline-block;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.readStatus {
+  border: 1px solid #a3a3a3;
+  color: #a3a3a3;
+}
+
+.unreadStatus {
+  border: 1px solid #f07232;
+  color: #f07232;
+}
+
+.messageDetails {
+  padding: 1rem;
+  border-top: 1px solid #a3a3a3;
+}
+
+.messageDetails p {
+  margin-bottom: 1.25rem;
+  color: #a3a3a3;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.statusMessage,
+.emptyMessage {
+  padding-block: 1.5rem;
+  color: #a3a3a3;
+}
+
+.accessMessage {
+  padding-block: 4rem;
+}
+
+.accessMessage p {
+  margin-top: 1rem;
+  color: #a3a3a3;
+}
+
+.accessMessage a {
+  color: #f07232;
+  text-decoration: underline;
+}
+
+@media (max-width: 40rem) {
+  .messageHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .messageMetadata {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab,
+  .activeTab,
+  .primaryButton,
+  .secondaryButton,
+  .deleteButton {
+    transition: none;
+  }
+}

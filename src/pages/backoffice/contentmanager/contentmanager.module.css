@@ -1,0 +1,148 @@
+.manager {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #a3a3a3;
+}
+
+.contentTable {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tableCaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tableHeader {
+  background: #000;
+  color: #f07232;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.tableHeader th,
+.contentCell {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #a3a3a3;
+  vertical-align: middle;
+}
+
+.tableHeader th {
+  font-weight: 600;
+}
+
+.contentRow {
+  background: #000;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.contentRow:hover {
+  background: #1a1a1a;
+}
+
+.contentRow:last-child .contentCell {
+  border-bottom: 0;
+}
+
+.contentCell {
+  font-size: 0.85rem;
+}
+
+.cellContent {
+  display: block;
+  max-width: 18rem;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+
+.contentImage {
+  display: block;
+  width: 5rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.mutedText {
+  color: #a3a3a3;
+  font-size: 0.8rem;
+}
+
+.contentActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.editAction,
+.deleteAction {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #a3a3a3;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.editAction:hover {
+  border-color: #f07232;
+  color: #f07232;
+}
+
+.deleteAction {
+  border-color: #f07232;
+  color: #f07232;
+}
+
+.deleteAction:hover {
+  background: #f07232;
+  color: #000;
+}
+
+.readStatus,
+.unreadStatus {
+  display: inline-block;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.readStatus {
+  border: 1px solid #a3a3a3;
+  color: #a3a3a3;
+}
+
+.unreadStatus {
+  border: 1px solid #f07232;
+  color: #f07232;
+}
+
+.emptyState {
+  padding: 1.5rem;
+  border: 1px solid #a3a3a3;
+  color: #a3a3a3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contentRow,
+  .editAction,
+  .deleteAction {
+    transition: none;
+  }
+}
