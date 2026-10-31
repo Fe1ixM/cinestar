@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "../404/errorPage.module.css";
 
-export default function error() {
+export default function Error() {
   return (
     <main className={styles.error}>
       <section className={styles.errorContent}>
